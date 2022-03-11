@@ -54,7 +54,7 @@ body
     justify-content: center;
 }
 
-#container div  
+.container div  
 {
     border-radius: 3px;
     color :black;
@@ -65,6 +65,14 @@ body
     padding: 20px;
     margin:5em 2em 1em 2.15em;
     font-weight: 700;
+    
+}
+
+.container div :hover
+{
+    size-adjust: 99%;
+    transition: 0.7s;
+    opacity: 0.5;
 }
 
 .img 
@@ -81,3 +89,7 @@ body
     background-color:var(--colorq)
 }
 
+/* .top-line
+{
+    top:7em;
+} */

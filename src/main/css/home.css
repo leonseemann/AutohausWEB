@@ -8,12 +8,6 @@
     /* border:2px solid black; */
 }
 
-body
-{
-    color: var(--color);
-    background-color: var(--background-color-darkmode);
-}
-
 :root {
     --background-color-darkmode: #2d2d2d;
     --background-color-lightmode:  #eae3d9 ;
@@ -21,6 +15,12 @@ body
     --colorq:#635e5e;
     --header-background-color:#6e6a68;
   }
+
+body
+{
+    color: var(--color);
+    background-color: var(--background-color-darkmode);
+}
 
 .header{
     width:100%;
@@ -58,8 +58,8 @@ body
 {
     border-radius: 3px;
     color :black;
-    width :32vh;
-    height:32vh; 
+    /* width :32vh;
+    height:32vh;  */
     display: flex;
     text-align: center;
     padding: 20px;

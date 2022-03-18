@@ -7,13 +7,13 @@
 }
 
 .auto-img {
-    @apply h-full object-cover object-[71%] rounded-xl;
+    @apply h-full object-cover rounded-xl;
 }
 
 .auto-p {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-4xl border-4 border-white font-bold bg-black/50 p-1;
 }
 
-.auto-p-large {
+.auto-p-smaller {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-3xl border-4 border-white font-bold bg-black/50 p-1;
 }

@@ -603,20 +603,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .marke {
   width: 11rem;
-  border-radius: 0.75rem;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
   background-color: rgb(127 29 29 / 0.25);
   padding: 0.25rem;
 }
 
 .marke-title {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 70 239 / var(--tw-bg-opacity));
   text-align: center;
 }
 
@@ -624,6 +620,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   height: calc(100% - 26px);
   align-items: center;
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.marke-section {
+  display: flex;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  width: 100vw;
+  justify-content: space-around;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  background-color: rgb(124 45 18 / 0.1);
 }

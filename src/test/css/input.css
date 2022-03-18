@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 .marke {
-    @apply w-44 border-2 border-black rounded-xl bg-red-900/25 p-1;
+    @apply w-44 bg-red-900/25 p-1;
 }
 
 .marke-title {
-    @apply text-center border-b-2 border-black /*bg-fuchsia-500*/ rounded-t-lg;
+    @apply text-center border-b-2 border-black bg-fuchsia-500;
 }
 
 .marke-logo {
-    @apply h-[calc(100%-26px)] flex items-center /*bg-red-500*/ rounded-b-lg;
+    @apply h-[calc(100%-26px)] flex items-center bg-red-500;
+}
+
+.marke-section {
+     @apply flex w-screen max-h-max justify-around bg-orange-900/10 border-y-2 border-black;
 }

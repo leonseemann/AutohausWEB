@@ -2,18 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.marke {
-    @apply w-44 bg-red-900/25 p-1;
+.auto-div {
+    @apply w-44 h-56 relative hover:opacity-60 transition-all;
 }
 
-.marke-title {
-    @apply text-center border-b-2 border-black bg-fuchsia-500;
+.auto-img {
+    @apply h-full object-cover object-[71%] rounded-xl;
 }
 
-.marke-logo {
-    @apply h-[calc(100%-26px)] flex items-center bg-red-500;
+.auto-p {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-4xl border-4 border-white font-bold bg-black/50 p-1;
 }
 
-.marke-section {
-     @apply flex w-screen max-h-max justify-around bg-orange-900/10 border-y-2 border-black;
+.auto-p-large {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-3xl border-4 border-white font-bold bg-black/50 p-1;
 }

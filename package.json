@@ -88,7 +88,10 @@
     "supports-preserve-symlinks-flag": "^1.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "live-server.cmd",
+    "tailwind-main": "npx tailwindcss -i .\\src\\main\\css\\input.css -o .\\src\\main\\css\\output.css --watch",
+    "tailwind-test": "npx tailwindcss -i .\\src\\test\\css\\input.css -o .\\src\\test\\css\\output.css --watch"
   },
   "repository": {
     "type": "git",

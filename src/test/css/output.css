@@ -600,6 +600,16 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-position: 34%;
 }
 
+.object-\[20\%\] {
+  -o-object-position: 20%;
+     object-position: 20%;
+}
+
+.object-\[10\%\] {
+  -o-object-position: 10%;
+     object-position: 10%;
+}
+
 .text-center {
   text-align: center;
 }

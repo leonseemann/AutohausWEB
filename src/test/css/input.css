@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.marke {
+    @apply w-44 border-2 border-black rounded-xl bg-red-900/25 p-1;
+}
+
+.marke-title {
+    @apply text-center border-b-2 border-black /*bg-fuchsia-500*/ rounded-t-lg;
+}
+
+.marke-logo {
+    @apply h-[calc(100%-26px)] flex items-center /*bg-red-500*/ rounded-b-lg;
+}

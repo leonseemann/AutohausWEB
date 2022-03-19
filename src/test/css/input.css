@@ -14,6 +14,10 @@
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-4xl border-4 border-white font-bold bg-black/50 p-1;
 }
 
-.auto-p-smaller {
+.auto-p-small {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-3xl border-4 border-white font-bold bg-black/50 p-1;
+}
+
+.auto-p-smaller {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl border-4 border-white font-bold bg-black/50 p-1;
 }

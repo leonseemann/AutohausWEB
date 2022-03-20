@@ -9,6 +9,18 @@ Falls was kaputt geht bitte nicht commiten!
 
 ***Tutorial bitte genau Befolgen!***
 
+# Wie benutze ich den darkmode
+
+In der klasse nimmt du das attribit für den dankmode und packst davor ein ```dark:```.
+
+Das bedeutet falls der darkmode aktiviert wird wird die Klasse benutzt anstatt die ohne ```dark:``` davor.
+
+## Beispiel
+
+```class="bg-while dark:bg-black"```
+ 
+***
+ 
 # Tutorial
 
 1. NodeJS und NPM installieren (so weit ich weis wird NPM automatisch mit NodeJS installiert)

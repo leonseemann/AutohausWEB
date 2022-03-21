@@ -21,3 +21,15 @@
 .auto-p-smaller {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl border-4 border-white font-bold bg-black/50 p-1;
 }
+
+.nav-ul {
+    @apply flex justify-around h-fit;
+}
+
+.nav-li {
+    @apply border-2 border-slate-300 dark:border-black rounded-xl p-1;
+}
+
+.nav-a {
+    @apply block text-slate-300 dark:text-black;
+}

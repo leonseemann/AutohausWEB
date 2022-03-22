@@ -1,5 +1,7 @@
 # AutohausWEB
 
+AutohausWEB dient für ein Projekt in der Schule.
+
 CSS mit TailwindCSS
 
 Bitte beachtet die Ordner Stuktur.

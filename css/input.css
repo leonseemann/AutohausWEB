@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .auto-div {
-    @apply w-44 h-56 relative hover:opacity-60 transition-all;
+    @apply w-44 h-56 relative hover:opacity-60 hover:w-[100%] transition-all;
 }
 
 .auto-img {
@@ -40,4 +40,12 @@
 
 .header-color {
     @apply bg-discord-700 dark:bg-discord-800;
+}
+
+.header-border-color {
+    @apply border-discord-light dark:border-discord-dark;
+}
+
+.darkmode-icon {
+    @apply flex items-center dark:text-yellow-300 text-gray-800;
 }

@@ -1,3 +1,5 @@
+[![Deploy](https://github.com/leonseemann/AutohausWEB/actions/workflows/main.yml/badge.svg)](https://github.com/leonseemann/AutohausWEB/actions/workflows/main.yml)
+
 # AutohausWEB
 
 AutohausWEB dient für ein Projekt in der Schule.

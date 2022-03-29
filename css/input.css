@@ -27,9 +27,17 @@
 }
 
 .nav-li {
-    @apply border-2 border-slate-300 dark:border-black rounded-xl p-1;
+    @apply border-2 border-slate-300 dark:border-white rounded-xl p-1;
 }
 
 .nav-a {
-    @apply block text-slate-300 dark:text-black;
+    @apply block text-slate-300 dark:text-white;
+}
+
+.body-color {
+    @apply bg-gray-300 dark:bg-discord-900;
+}
+
+.header-color {
+    @apply bg-discord-700 dark:bg-discord-800;
 }

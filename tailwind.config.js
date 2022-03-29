@@ -7,9 +7,11 @@ module.exports = {
       colors: {
         'discord': {
           600: '#99AAB5',
-          700: '#5865F2',
+          700: '#b3e5fc',
           800: '#2C2F33',
           900: '#23272A',
+          'light': '#29b6f6',
+          'dark': '#8000ff',
         },
       },
     },

@@ -472,8 +472,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.top-11 {
+  top: 2.75rem;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.m-7 {
+  margin: 1.75rem;
 }
 
 .flex {
@@ -568,6 +584,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-right-radius: 0.75rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -580,14 +600,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: solid;
 }
 
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-slate-300 {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-slate-500 {
@@ -595,19 +615,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-discord-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+  background-color: rgb(179 229 252 / var(--tw-bg-opacity));
 }
 
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
 .object-\[67\%\] {
@@ -628,6 +648,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .object-\[10\%\] {
   -o-object-position: 10%;
      object-position: 10%;
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-8 {
@@ -659,6 +691,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .auto-div:hover {
+  width: 100%;
   opacity: 0.6;
 }
 
@@ -770,7 +803,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .header-color {
   --tw-bg-opacity: 1;
-  background-color: rgb(88 101 242 / var(--tw-bg-opacity));
+  background-color: rgb(179 229 252 / var(--tw-bg-opacity));
 }
 
 .dark .header-color {
@@ -778,14 +811,51 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(44 47 51 / var(--tw-bg-opacity));
 }
 
+.header-border-color {
+  --tw-border-opacity: 1;
+  border-color: rgb(41 182 246 / var(--tw-border-opacity));
+}
+
+.dark .header-border-color {
+  --tw-border-opacity: 1;
+  border-color: rgb(128 0 255 / var(--tw-border-opacity));
+}
+
+.darkmode-icon {
+  display: flex;
+  align-items: center;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.dark .darkmode-icon {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
+}
+
 .dark .dark\:border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.dark .dark\:border-discord-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(128 0 255 / var(--tw-border-opacity));
+}
+
+.dark .dark\:bg-discord-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 47 51 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
@@ -805,5 +875,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 }

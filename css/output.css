@@ -625,11 +625,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .bg-discord-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(179 229 252 / var(--tw-bg-opacity));
@@ -638,6 +633,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-blue-300 {
@@ -679,8 +679,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.pr-14 {
+  padding-right: 3.5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-\[3em\] {
+  font-size: 3em;
 }
 
 .text-\[50px\] {
@@ -838,7 +850,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .dark .header-color {
   --tw-bg-opacity: 1;
-  background-color: rgb(44 47 51 / var(--tw-bg-opacity));
+  background-color: rgb(51 47 51 / var(--tw-bg-opacity));
 }
 
 .header-border-color {
@@ -910,7 +922,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .dark .dark\:bg-discord-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(44 47 51 / var(--tw-bg-opacity));
+  background-color: rgb(51 47 51 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-gray-500 {

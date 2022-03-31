@@ -27,11 +27,11 @@
 }
 
 .nav-li {
-    @apply border-2 border-slate-300 dark:border-white rounded-xl p-1;
+    @apply border-2 dark:border-white border-black rounded-xl p-1;
 }
 
 .nav-a {
-    @apply block text-slate-300 dark:text-white;
+    @apply block dark:text-white text-black;
 }
 
 .body-color {
@@ -48,4 +48,8 @@
 
 .darkmode-icon {
     @apply flex items-center dark:text-yellow-300 text-gray-800;
+}
+
+.shadow-colored {
+    @apply shadow-lg shadow-discord-light dark:shadow-discord-dark;
 }

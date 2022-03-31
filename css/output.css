@@ -498,6 +498,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -625,6 +629,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
 .bg-discord-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(179 229 252 / var(--tw-bg-opacity));
@@ -702,6 +711,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .auto-div {
@@ -915,9 +928,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 0px;
 }
 
+.logs-table {
+  margin: auto;
+  margin-top: 0.5rem;
+  width: 50%;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.logs-tr {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.logs-th {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.logs-td {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .dark .dark\:border-discord-dark {
   --tw-border-opacity: 1;
   border-color: rgb(128 0 255 / var(--tw-border-opacity));
+}
+
+.dark .dark\:border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-discord-800 {
@@ -964,3 +1009,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 }
+

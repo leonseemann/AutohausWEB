@@ -66,3 +66,20 @@
 .ausstattung-img{
     @apply rounded-xl border-0;
 }
+
+.logs-table {
+    @apply border-2 border-black w-6/12 m-auto mt-2;
+}
+
+.logs-tr {
+    @apply border-2 border-black;
+}
+
+.logs-th {
+    @apply border-2 border-black;
+}
+
+.logs-td {
+    @apply border-2 border-black;
+}
+

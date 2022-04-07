@@ -23,7 +23,7 @@
 }
 
 .nav-ul-right {
-    @apply flex justify-around h-fit object-right;
+    @apply flex justify-around h-fit object-right pr-2;
 }
 .nav-ul-left {
     @apply flex justify-around h-fit object-left;

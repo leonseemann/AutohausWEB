@@ -494,6 +494,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -719,6 +727,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[2em\] {
+  font-size: 2em;
 }
 
 .font-bold {
@@ -1014,6 +1026,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:bg-slate-50 {
     --tw-bg-opacity: 1;
     background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  }
+
+  .md\:text-\[3em\] {
+    font-size: 3em;
   }
 }
 

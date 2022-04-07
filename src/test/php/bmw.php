@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,478 +10,58 @@
 
     <title>BMW</title>
 </head>
-<body class="bg-slate-300 dark:bg-gray-500">
-    <header class="bg-slate-500 border-solid border-b-2 border-black rounded-b-xl px-8">
-        <div class="flex justify-between">
-            <a href="./index.html">
-                <img src="../resources/logos/logo2.png" alt="Logo" class="w-25">
-            </a>
-    
-            <div class="flex items-center">
-                <i onclick="darkmodeToggle()" id="darkmode" class="fa-solid fa-2xl"></i>
-            </div>
+<body class="body-color">
+    <header class="flex header-color p-2 justify-between border-solid border-b-2 header-border-color shadow-colored sticky z-50">
+        <a href="../index.html">
+            <img src="" alt="Logo" class="w-24" id="logo">
+        </a>
+        <div class="text-[3em] dark:text-white"><p>BMW</p></div>
+        <div class="darkmode-icon pr-14">
+            <i onclick="darkmodeToggle()" id="darkmode" class="fa-solid fa-2xl"></i>
         </div>
-        <nav class="border-t-2 border-slate-300 dark:border-black py-1">
-            <ul class="nav-ul">
-                <li class="nav-li"><a class="nav-a" href="#Combi">#Combi</a></li>
-                <li class="nav-li"><a class="nav-a" href="#Coupe">#Coupe</a></li>
-                <li class="nav-li"><a class="nav-a" href="#Sportwagen">#Sportwagen</a></li>
-                <li class="nav-li"><a class="nav-a" href="#Limo">#Limo</a></li>
-                <li class="nav-li"><a class="nav-a" href="#SUV">#SUV</a></li>
-                <li class="nav-li"><a class="nav-a" href="#Cabrio">#Cabrio</a></li>
-            </ul>
-        </nav>
     </header>
     
-    <section id="Combi" >
+    <nav class="flex justify-between border-discord-light dark:border-discord-dark py-1 my-5 sticky top-0 z-10">
+             <div class="w-1/3">
+                <ul class="nav-ul-left">
+                    <li class="nav-li"><a class="nav-a" href="#Kombi">Kombi</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#Coupe">Coupé</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#Cabrio">Cabrio</a></li>
+                 </ul>
+            </div>
+            <div class="w-1/3">
+                <ul class="nav-ul-right">
+                    <li class="nav-li"><a class="nav-a" href="#Limo">Limo</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#SUV">SUV</a></li>
+                    <li class="nav-li"><a class="nav-a" href="#Sportwagen">Sportwagen</a></li>
+                </ul>
+            </div>
+    </nav>
+    
+    <section id="Kombi" >
         <div class="w-screen">
-            <p class="text-center">#Combi</p>
+            <p class="text-center text-[50px] dark:text-white">Kombi</p>
         </div>
         <div class="grid grid-cols-2 grid-rows-6 md:grid-cols-3 md:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 gap-4 justify-items-center">
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
+            <?php
+                include 'conn.php';
+                include 'GetCars.php';
+
+                if ($conn) {
+                    if (mysqli_error($conn)) {
+                        echo 'Fehler: ' . mysqli_error($conn);
+                    } else {
+                        printCar('BMW');
+                    }
+                } else {
+                    echo "Verbindungsfehler: " . mysqli_connect_error($conn);
+                }
+            ?>
         </div>
     </section>
 
-    <section id="Coupe" >
-        <div class="w-screen">
-            <p class="text-center">#Combi</p>
-        </div>
-        <div class="grid grid-cols-2 grid-rows-6 md:grid-cols-3 md:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 gap-4 justify-items-center">
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="w-44">
-                <div>
-                    <p class="text-center">test</p>
-                </div>
-                <div>
-                    <img src="../resources/none.svg" alt="audi">
-                </div>
-                <div>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="flex bg-slate-500 justify-center border-solid border-t-2 border-black rounded-t-xl w-full">
+    <footer class="flex justify-center border-solid border-t-2 rounded-t-xl w-full
+     dark:text-white header-color border-x-2  header-border-color">
         <p>footer</p>
     </footer>
 </body>

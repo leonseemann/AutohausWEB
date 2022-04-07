@@ -494,6 +494,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -548,16 +556,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: fit-content;
 }
 
+<<<<<<< HEAD
+=======
+.w-1\/4 {
+  width: 25%;
+}
+
+>>>>>>> 62ec825c296127a698ca15c07e1992f5abb887ca
 .w-1\/2 {
   width: 50%;
 }
 
+<<<<<<< HEAD
 .w-max {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
+=======
+>>>>>>> 62ec825c296127a698ca15c07e1992f5abb887ca
 .max-w-full {
   max-width: 100%;
 }
@@ -732,6 +750,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-\[2em\] {
+  font-size: 2em;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -827,6 +849,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
   -o-object-position: right;
      object-position: right;
+  padding-right: 0.5rem;
 }
 
 .nav-ul-left {
@@ -1020,6 +1043,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:justify-between {
     justify-content: space-between;
   }
+<<<<<<< HEAD
+=======
+
+  .md\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-slate-50 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  }
+
+  .md\:text-\[3em\] {
+    font-size: 3em;
+  }
+>>>>>>> 62ec825c296127a698ca15c07e1992f5abb887ca
 }
 
 @media (min-width: 1280px) {

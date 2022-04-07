@@ -1,16 +1,19 @@
 var lightIcon = "fa-moon";
 var darkIcon = "fa-sun";
 
+var darkLogo = "./resources/logos/logo_large_darkmode.png";
+var whiteLogo = "./resources/logos/logo_large_whitemode.png";
+
 function tailwindToggle(){
   if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
     document.documentElement.classList.add("dark");
     document.getElementById("darkmode").classList.add(darkIcon);
-    document.getElementById("logo").src="./resources/logos/logo_large_darkmode.png"
+    document.getElementById("logo").src=darkLogo
     console.log("Darkmode[tailwindToggle]: Enabled");
   } else {
     document.documentElement.classList.remove("dark");
     document.getElementById("darkmode").classList.add(lightIcon);
-    document.getElementById("logo").src="./resources/logos/logo_large_whitemode.png"
+    document.getElementById("logo").src=whiteLogo
     console.log("Darkmode[tailwindToggle]: Disabled");
   }
 }
@@ -19,14 +22,14 @@ function darkmodeEnabled() {
   document.documentElement.classList.add("dark");
   document.getElementById("darkmode").classList.remove(lightIcon);
   document.getElementById("darkmode").classList.add(darkIcon);
-  document.getElementById("logo").src="./resources/logos/logo_large_darkmode.png"
+  document.getElementById("logo").src=darkLogo
 }
 
 function darkmodeDisabled() {
   document.documentElement.classList.remove("dark");
   document.getElementById("darkmode").classList.remove(darkIcon);
   document.getElementById("darkmode").classList.add(lightIcon);
-  document.getElementById("logo").src="./resources/logos/logo_large_whitemode.png"
+  document.getElementById("logo").src=whiteLogo
 }
 
 if (localStorage.getItem('isDarkmode') === null) {

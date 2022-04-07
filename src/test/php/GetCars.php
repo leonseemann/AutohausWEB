@@ -16,7 +16,7 @@
                     <p class="text-center header-sections"><?php echo $ausgabe['modell'] ?></p>
                 </div>
                 <div>
-                    <img src="data:image/<?php echo $ausgabe['bildendung']?>;charset=utf8;base64,<?php echo base64_encode($ausgabe['bild']); ?>"  class="ausstattung-img" alt="audi">
+                    <img src="data:image/<?php echo $ausgabe['bildendung']?>;charset=utf8;base64,<?php echo ($ausgabe['bild']); ?>"  class="ausstattung-img" alt="audi">
                 </div>
                 <div class="text-white">
                     <p class="bg-red-400 break-words">

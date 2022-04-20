@@ -564,10 +564,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
-.items-center {
-  align-items: center;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -601,11 +597,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-right-radius: 0.75rem;
 }
 
-.rounded-b-xl {
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -637,29 +628,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-slate-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(203 213 225 / var(--tw-border-opacity));
-}
-
 .bg-discord-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(179 229 252 / var(--tw-bg-opacity));
-}
-
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
 .bg-red-400 {
@@ -694,11 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pr-14 {
@@ -983,19 +949,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(128 0 255 / var(--tw-border-opacity));
 }
 
-.dark .dark\:border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .dark .dark\:bg-discord-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(51 47 51 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-white {

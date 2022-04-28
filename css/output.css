@@ -485,6 +485,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.float-left {
+  float: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -492,6 +500,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mt-2 {
@@ -512,10 +528,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-auto {
   height: auto;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .max-h-full {
@@ -662,6 +674,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -685,6 +701,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[50px\] {
   font-size: 50px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-\[2em\] {

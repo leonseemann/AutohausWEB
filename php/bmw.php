@@ -52,6 +52,7 @@
                         echo 'Fehler: ' . mysqli_error($conn);
                     } else {
                         printCar("BMW");
+                        printCar("Audi");
                     }
                 } else {
                     echo "Verbindungsfehler: " . mysqli_connect_error($conn);

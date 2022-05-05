@@ -51,8 +51,7 @@
                     if (mysqli_error($conn)) {
                         echo 'Fehler: ' . mysqli_error($conn);
                     } else {
-                        printCar("BMW");
-                        printCar("Audi");
+                        printCar("BMW", "Kombi");
                     }
                 } else {
                     echo "Verbindungsfehler: " . mysqli_connect_error($conn);

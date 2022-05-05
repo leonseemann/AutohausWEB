@@ -1,5 +1,5 @@
 <?php
-    function printCar($marke){
+    function printCar($marke, $typ){
         include 'conn.php';
         //$sql = "SELECT  modell, baujahr, kommentar, preis FROM auto LEFT JOIN ausstattung ON 'ausstattung.ASID' = 'auto.ASID' WHERE auto.hersteller = '{$marke}'";
         $sql = "SELECT typ, modell, baujahr, hersteller, kommentar, bild, bildendung, felgenzoll, felgenmaterial, sitzheizung, lenkradheizung, schiebedach, farbe, farbematerial, innenraummaterial, sitzmaterial, verbrauch, getriebe, kraftstoff, hubraum, ps, preis 
@@ -7,6 +7,7 @@
                 LEFT JOIN ausstattung ON auto.ASID = ausstattung.ASID 
                 LEFT JOIN motor ON auto.MTID = motor.MTID 
                 WHERE auto.hersteller = '{$marke}' 
+                WHERE auto.typ = {$typ}
                 ORDER BY auto.hersteller, auto.typ ASC";
         $abfrage = mysqli_query($conn, $sql);
         while ($ausgabe = mysqli_fetch_assoc($abfrage)) {

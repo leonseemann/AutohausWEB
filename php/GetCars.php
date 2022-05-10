@@ -7,9 +7,16 @@
                 LEFT JOIN ausstattung ON auto.ASID = ausstattung.ASID 
                 LEFT JOIN motor ON auto.MTID = motor.MTID 
                 WHERE auto.hersteller = '{$marke}' 
-                WHERE auto.typ = {$typ}
+                AND auto.typ = '{$typ}'
                 ORDER BY auto.hersteller, auto.typ ASC";
         $abfrage = mysqli_query($conn, $sql);
+        ?>
+        <section id="<?php echo $typ ?>" >
+        <div class="w-screen">
+            <p class="text-center text-[50px] dark:text-white"><?php echo $typ ?></p>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-6 md:grid-cols-3 md:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 gap-4 justify-items-center">
+        <?php
         while ($ausgabe = mysqli_fetch_assoc($abfrage)) {
 ?>
             <div class="w-44">
@@ -47,5 +54,9 @@
             </div>
 <?php
         }
+        ?>
+                </div>
+    </section>
+        <?php
     }
 ?>

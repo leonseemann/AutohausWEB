@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="./css/output.css">
     
     <script src="https://kit.fontawesome.com/60f4014743.js" crossorigin="anonymous"></script>
 
@@ -12,7 +12,7 @@
 </head>
 <body class="body-color">
     <header class="flex header-color p-2 justify-between border-solid border-b-2 header-border-color shadow-colored sticky z-50">
-        <a href="../index.html">
+        <a href="./index.html">
             <img src="" alt="Logo" class="w-24" id="logo">
         </a>
         <div class="text-[3em] dark:text-white"><p>BMW</p></div>
@@ -38,27 +38,22 @@
             </div>
     </nav>
     
-    <section id="Kombi" >
-        <div class="w-screen">
-            <p class="text-center text-[50px] dark:text-white">Kombi</p>
-        </div>
-        <div class="grid grid-cols-2 grid-rows-6 md:grid-cols-3 md:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 gap-4 justify-items-center">
-            <?php
-                include 'conn.php';
-                include 'GetCars.php';
+    <?php
+                include './php/conn.php';
+                include './php/GetCars.php';
 
                 if ($conn) {
                     if (mysqli_error($conn)) {
                         echo 'Fehler: ' . mysqli_error($conn);
                     } else {
                         printCar("BMW", "Kombi");
+                        printCar("BMW", "Coupe");
                     }
                 } else {
                     echo "Verbindungsfehler: " . mysqli_connect_error($conn);
                 }
             ?>
-        </div>
-    </section>
+
 
     <footer class="flex justify-center border-solid border-t-2 rounded-t-xl w-full
      dark:text-white header-color border-x-2  header-border-color">
@@ -67,4 +62,4 @@
 </body>
 </html>
 
-<script src="../js/darkmode.js"></script>
+<script src="./js/darkmode.js"></script>

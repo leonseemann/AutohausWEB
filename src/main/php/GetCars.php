@@ -1,7 +1,6 @@
 <?php
     function printCar($marke, $typ){
         include 'conn.php';
-        //$sql = "SELECT  modell, baujahr, kommentar, preis FROM auto LEFT JOIN ausstattung ON 'ausstattung.ASID' = 'auto.ASID' WHERE auto.hersteller = '{$marke}'";
         $sql = "SELECT typ, modell, baujahr, hersteller, kommentar, bild, bildendung, felgenzoll, felgenmaterial, sitzheizung, lenkradheizung, schiebedach, farbe, farbematerial, innenraummaterial, sitzmaterial, verbrauch, getriebe, kraftstoff, hubraum, ps, preis 
                 FROM auto 
                 LEFT JOIN ausstattung ON auto.ASID = ausstattung.ASID 
@@ -15,7 +14,7 @@
         <div class="w-screen">
             <p class="text-center text-[50px] dark:text-white"><?php echo $typ ?></p>
         </div>
-        <div class="grid grid-cols-2 grid-rows-6 md:grid-cols-3 md:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 gap-4 justify-items-center">
+        <div class="grid grid-cols-2 grid-rows-none md:grid-cols-3 md:grid-rows-none xl:grid-cols-4 xl:grid-rows-none gap-4 justify-items-center">
         <?php
         while ($ausgabe = mysqli_fetch_assoc($abfrage)) {
 ?>
@@ -26,8 +25,8 @@
                 <div>
                     <img src="data:image/<?php echo $ausgabe['bildendung']?>;charset=utf8;base64,<?php echo ($ausgabe['bild']); ?>"  class="ausstattung-img" alt="audi">
                 </div>
-                <div class="text-white">
-                    <p class="bg-red-400 break-words">
+                <div class="dark:text-white text-black mt-1">
+                    <p class="break-words border-2 dark:border-white border-black">
                     <?php echo $ausgabe['kommentar'] ?>
                     </p>
                 </div>

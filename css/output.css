@@ -543,6 +543,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -571,14 +575,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -605,6 +601,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: fit-content;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -615,6 +619,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-rows-6 {
   grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.grid-rows-none {
+  grid-template-rows: none;
 }
 
 .justify-center {
@@ -686,11 +694,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(179 229 252 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
 .object-\[67\%\] {
   -o-object-position: 67%;
      object-position: 67%;
@@ -740,10 +743,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 3em;
 }
 
-.text-\[50px\] {
-  font-size: 50px;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -754,8 +753,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-\[2em\] {
-  font-size: 2em;
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .font-bold {
@@ -767,9 +766,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .auto-div {
@@ -1016,6 +1015,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(128 0 255 / var(--tw-border-opacity));
 }
 
+.dark .dark\:border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .dark .dark\:bg-discord-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(51 47 51 / var(--tw-bg-opacity));
@@ -1039,12 +1043,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
+  .md\:grid-rows-none {
+    grid-template-rows: none;
   }
 
-  .md\:text-\[3em\] {
-    font-size: 3em;
+  .md\:justify-between {
+    justify-content: space-between;
   }
 }
 
@@ -1055,6 +1059,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-none {
+    grid-template-rows: none;
   }
 }
 

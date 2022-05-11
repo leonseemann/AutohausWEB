@@ -2,7 +2,7 @@ var lightIcon = "fa-moon";
 var darkIcon = "fa-sun";
 
 var darkLogo = "./resources/logos/logo.png";
-var whiteLogo = "./resources/logos/logoWhite.png";
+var whiteLogo = "./resources/logos/logo.png";
 
 function tailwindToggle(){
   if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {

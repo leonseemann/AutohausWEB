@@ -8,14 +8,14 @@
     
     <script src="https://kit.fontawesome.com/60f4014743.js" crossorigin="anonymous"></script>
 
-    <title>BMW</title>
+    <title>VW</title>
 </head>
 <body class="body-color">
     <header class="flex header-color p-2 justify-between border-solid border-b-2 header-border-color shadow-colored sticky z-50">
         <a href="./index.html">
             <img src="" alt="Logo" class="w-24" id="logo">
         </a>
-        <div class="text-[3em] dark:text-white"><p>BMW</p></div>
+        <div class="text-[3em] dark:text-white"><p>VW</p></div>
         <div class="darkmode-icon pr-14">
             <i onclick="darkmodeToggle()" id="darkmode" class="fa-solid fa-2xl"></i>
         </div>
@@ -46,12 +46,12 @@
                     if (mysqli_error($conn)) {
                         echo 'Fehler: ' . mysqli_error($conn);
                     } else {
-                        printCar("BMW", "Kombi");
-                        printCar("BMW", "Coupe");
-                        printCar("BMW", "Cabrio");
-                        printCar("BMW", "Limo");
-                        printCar("BMW", "SUV");
-                        printCar("BMW", "Sportwagen");
+                        printCar("VW", "Kombi");
+                        printCar("VW", "Coupe");
+                        printCar("VW", "Cabrio");
+                        printCar("VW", "Limo");
+                        printCar("VW", "SUV");
+                        printCar("VW", "Sportwagen");
                     }
                 } else {
                     echo "Verbindungsfehler: " . mysqli_connect_error($conn);
